@@ -448,3 +448,6 @@ Frontend: http://localhost:5173
 Backend API: http://localhost:5000
 
 Login as Admin or User to test the full flow.
+
+# Demo Link
+https://drive.google.com/file/d/15P7Mcn2bmZWB8hGRbBXyTleT8OEApsOe/view?usp=sharing
