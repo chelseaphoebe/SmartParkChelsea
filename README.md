@@ -390,8 +390,8 @@ I would also deploy the application. I’ve already attempted deployment, but en
 # How to Run the Application
 
 1. Clone the Repository
-git clone https://github.com/chelseaphoebe/SmartPark-Chelsea
-cd SmartPark-Chelsea
+git clone https://github.com/chelseaphoebe/SmartParkChelsea
+cd SmartParkChelsea
 
 2. Install Dependencies
 Backend
