@@ -385,6 +385,8 @@ Example:
 
 If I had another week, I would refine and extend the booking system that I’ve already implemented. While users can currently book a slot, I would expand this into a complete Booking & Check-in/Check-out flow, including dedicated endpoints and a bookings table to properly track which user owns each reservation. I would also enhance the UI/UX—especially on the lot details and booking screens—to make the experience smoother, clearer, and more intuitive, with better visual feedback and interaction design.
 
+I would also deploy the application. I’ve already attempted deployment, but encountered issues during the process. With more time, I would troubleshoot these errors and ensure the system is successfully deployed and accessible.
+
 # How to Run the Application
 
 1. Clone the Repository
