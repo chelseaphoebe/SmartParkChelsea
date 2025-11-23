@@ -3,8 +3,6 @@
 SmartPark-Chelsea is a fullstack Smart Parking Web Application prototype built for a Fullstack Developer Intern case study.  
 It helps users find available parking slots and allows admins to manage parking lots and simulate real-time slot status changes.
 
-GitHub Repository: https://github.com/chelseaphoebe/SmartParkChelsea
-
 ---
 
 ## Table of Contents

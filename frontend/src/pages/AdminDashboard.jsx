@@ -3,13 +3,14 @@ import { Link, useNavigate } from "react-router-dom";
 import api from "../api/axios";
 import { AuthContext } from "../context/AuthContext";
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import TypingAnimation from "../components/TypingAnimation";
 
 export default function AdminDashboard() {
   const [statistics, setStatistics] = useState(null);
   const [loading, setLoading] = useState(true);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const navigate = useNavigate();
-  const { logout } = useContext(AuthContext);
+  const { user, logout } = useContext(AuthContext);
 
   const handleLogout = () => {
     logout();
@@ -121,7 +122,7 @@ export default function AdminDashboard() {
         <div className="relative z-10">
           <p className="uppercase tracking-wider text-sm text-[#cbe0ff]">Admin Analytics</p>
           <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
-            Real-time Dashboard
+            Welcome, <TypingAnimation text={`${user?.name || 'Admin'}!`} speed={150} />
           </h1>
           <p className="mt-4 text-[#d8e8ff] max-w-xl">
             Monitor parking lot occupancy and performance metrics in real-time.

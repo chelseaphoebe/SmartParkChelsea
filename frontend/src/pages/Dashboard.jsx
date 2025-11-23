@@ -2,10 +2,11 @@ import React, { useEffect, useState, useContext } from "react";
 import api from "../api/axios";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
+import TypingAnimation from "../components/TypingAnimation";
 
 export default function Dashboard() {
   const [lots, setLots] = useState([]);
-  const { logout } = useContext(AuthContext);
+  const { user, logout } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -53,7 +54,7 @@ export default function Dashboard() {
           <div>
             <p className="uppercase tracking-wider text-sm text-[#cbe0ff]">Parking System</p>
             <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
-              Available Parking Lots
+              Welcome, <TypingAnimation text={`${user?.name || 'User'}!`} speed={150} />
             </h1>
             <p className="mt-4 text-[#d8e8ff] max-w-xl">
               Choose a parking lot to continue and select an available slot.
